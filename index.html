@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example Tutorial
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Financial Planner</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Transaction Date</label><label class="validation-error hide" id="InputDateValidationError">This field is required.</label>
+                        <input type="date" name="InputDate" id="InputDate">
+                    </div>
+                    <div>
+                        <label>Transaction Info</label>
+                        <input type="text" name="TransactionInfo" id="TransactionInfo">
+                    </div>
+                    <div>
+                        <label>Expenditure</label>
+                        <input type="number" name="Expenditure" id="Expenditure">
+                    </div>
+                    <div>
+                        <label>Before Value</label>
+                        <input type="text" name="BeforeValue" id="BeforeValue">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Transaction Date</th>
+                            <th>Transaction Info</th>
+                            <th>Expenditure</th>
+                            <th>Before Value</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
