@@ -1,5 +1,6 @@
 # Tugas-Webdev-Ristek
-#by Andika Pramudya Wardana
+by Andika Pramudya Wardana
+
 Instruction:
 1. Input when did the user do the transaction
 2. Input what is the purpose of the transaction
